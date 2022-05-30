@@ -6,7 +6,12 @@
       check out the
       <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
     </p>
+    <MessageComponent variant="success"/>
+    <InputComponent />
+    <NavbarComponent />
     <h3>Installed CLI Plugins</h3>
+    <CounterComponent />
+    <CounterCompositionAPIComponent />
     <ul>
       <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
       <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-router" target="_blank" rel="noopener">router</a></li>
@@ -34,10 +39,23 @@
 </template>
 
 <script>
+import MessageComponent from '@/components/Message.vue';
+import InputComponent from '@/components/Input.vue';
+import NavbarComponent from '@/components/Navbar.vue';
+import CounterComponent from '@/components/Counter.vue';
+import CounterCompositionAPIComponent from '@/components/CounterCompositionAPI.vue';
+
 export default {
   name: 'HelloWorld',
   props: {
     msg: String
+  },
+  components: {
+    MessageComponent,
+    InputComponent,
+    NavbarComponent,
+    CounterComponent,
+    CounterCompositionAPIComponent
   }
 }
 </script>
