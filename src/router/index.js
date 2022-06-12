@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import FormView from '../views/FormView.vue'
 import LoginView from '../views/LoginView.vue'
+import RenderlessView from '../views/RenderlessView.vue'
 
 const routes = [
   {
@@ -26,6 +27,11 @@ const routes = [
     path: '/login',
     name: 'login',
     component: LoginView
+  },
+  {
+    path: '/renderless-components',
+    name: 'renderless',
+    component: RenderlessView
   }
 ]
 

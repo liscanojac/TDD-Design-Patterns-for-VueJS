@@ -14,7 +14,7 @@ jest.mock('axios', () => {
     }
   }
 })
-// here as you can see, thjis axios mock has no problem working as a mock function for the axios executed in the userData module in the login action, so you can mock axios and test-utils knows where is better to use it
+// here as you can see, this axios mock has no problem working as a mock function for the axios executed in the userData module in the login action, so you can mock axios and test-utils knows where is better to use it
 
 describe('VuexLogin component', () => {
 
